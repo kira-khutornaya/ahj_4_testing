@@ -1,0 +1,160 @@
+body {
+  height: 95vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 385px;
+  height: 100%;
+  margin: auto;
+  padding: 10px;
+}
+
+.cards {
+  padding: 15px;
+  border: 1px solid grey;
+}
+
+.cards__title {
+  margin: 0 auto;
+  font-size: 22px;
+}
+
+.cards__list {
+  margin: 10px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.cards__item {
+  display: inline-block;
+  margin-right: 1px;
+  background-size: 33px 22px;
+  background-repeat: no-repeat;
+}
+
+.cards-item__filter {
+  filter: grayscale(1);
+  opacity: 0.3;
+}
+
+.cards-item__mir {
+  background-image: url(../img/mir.png);
+}
+
+.cards-item__visa {
+  background-image: url(../img/visa.png);
+}
+
+.cards-item__mastercard {
+  background-image: url(../img/mastercard.png);
+}
+
+.cards-item__amex {
+  background-image: url(../img/amex.png);
+}
+
+.cards-item__discover {
+  background-image: url(../img/discover.png);
+}
+
+.cards-item__jcb {
+  background-image: url(../img/jcb.png);
+}
+
+.cards-item__dinersclub {
+  background-image: url(../img/dinersclub.png);
+}
+
+.cards-item__text {
+  display: inline-block;
+  width: 33px;
+  height: 22px;
+  text-indent: -9999px;
+}
+
+.field-group__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.field-group__input {
+  box-sizing: border-box;
+  height: 34px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #555;
+}
+
+.field-group__input:focus {
+  border-color: #64c052;
+  outline: 0;
+}
+
+.form-group__button {
+  box-sizing: border-box;
+  height: 34px;
+  padding: 6px 12px;
+  border: 1px solid #64c052;
+  border-radius: 4px;
+  background-color: #64c052;
+  font-size: 14px;
+  color: white;
+}
+
+.form-group__button:hover {
+  background-color: #2e9b18;
+  cursor: pointer;
+}
+
+.modal {
+  opacity: 0;
+  margin-top: 15px;
+  padding: 15px 40px 15px 15px;
+  border: 2px solid #fff;
+  background-position: center right 10px;
+  background-size: 25px;
+  background-color: #fff6f6;
+  background-repeat: no-repeat;
+}
+
+.modal_success {
+  box-sizing: border-box;
+  border: 2px solid #2c662d;
+  background-image: url(../img/success.png);
+}
+
+.modal_error {
+  border: 2px solid #9f3a38;
+  background-image: url(../img/error.png);
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 317px;
+  }
+
+  .cards {
+    padding: 10px;
+  }
+
+  .field-group__input {
+    display: block;
+    width: 100%;
+  }
+
+  .form-group__button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
